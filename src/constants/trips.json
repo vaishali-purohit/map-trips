@@ -1,0 +1,167 @@
+[
+  {
+    "travelFromDate": 1615079685000,
+    "travelToDate": 1621928276000,
+    "source": "Andhra Pradesh",
+    "destination": "Assam",
+    "tripType": "School",
+    "latitude": 26.2006,
+    "longitude": 92.9376,
+    "description": "",
+    "imageURL": "https://cdn.thecrazytourist.com/wp-content/uploads/2017/01/Sanganeb-National-Park.jpg"
+  },
+  {
+    "travelFromDate": 1615593873000,
+    "travelToDate": 1616502243000,
+    "source": "Arunachal Pradesh",
+    "destination": "Chandigarh",
+    "tripType": "Business",
+    "latitude": 30.7333,
+    "longitude": 76.7794,
+    "description": "",
+    "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2016/01/Sicily_italy_1_700x400-400x229.jpg"
+  },
+  {
+    "travelFromDate": 1631883229000,
+    "travelToDate": 1626519890000,
+    "source": "Delhi",
+    "destination": "Jammu and Kashmir",
+    "tripType": "Holiday",
+    "latitude": 33.2778,
+    "longitude": 75.3412,
+    "description": "",
+    "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2018/10/Cartagena-400x243.jpg"
+  },
+  {
+    "travelFromDate": 1631602576000,
+    "travelToDate": 1632875120000,
+    "source": "Lakshadweep",
+    "destination": "Andhra Pradesh",
+    "tripType": "School",
+    "latitude": 15.9129,
+    "longitude": 79.7400,
+    "description": "",
+    "imageURL": "https://www.planetware.com/photos-large/CHN/china-great-wall-and-mountain.jpg"
+  },
+  {
+    "travelFromDate": 1641109626000,
+    "travelToDate": 1612378761000,
+    "source": "Puducherry",
+    "destination": "West Bengal",
+    "tripType": "School",
+    "latitude": 22.9868,
+    "longitude": 87.8550,
+    "description": "",
+    "imageURL": "https://www.planetware.com/photos-large/HR/croatia-dubrovnik-old-town-4.jpg"
+  },
+  {
+    "travelFromDate": 1611255283000,
+    "travelToDate": 1614701056000,
+    "source": "Telangana",
+    "destination": "Uttar Pradesh",
+    "tripType": "Business",
+    "latitude": 26.8467,
+    "longitude": 80.9462,
+    "description": "",
+    "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2018/06/portugal-star-trail.jpg"
+  },
+  {
+    "travelFromDate": 1610297434000,
+    "travelToDate": 1642458568000,
+    "source": "Tamil Nadu",
+    "destination": "Sikkim",
+    "tripType": "Business",
+    "latitude": 27.5330,
+    "longitude": 88.5122,
+    "description": "",
+    "imageURL": "https://www.planetware.com/wpimages/2019/10/russia-best-places-to-visit-moscow.jpg"
+  },
+  {
+    "travelFromDate": 1620193179000,
+    "travelToDate": 1636360721000,
+    "source": "Arunachal Pradesh",
+    "destination": "Andaman and Nicobar Islands",
+    "tripType": "Holiday",
+    "latitude": 11.7401,
+    "longitude": 92.6586,
+    "description": "",
+    "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2018/05/Places-To-Visit-In-Sweden_20th-jun.jpg"
+  },
+  {
+    "travelFromDate": 1638028965000,
+    "travelToDate": 1629047480000,
+    "source": "Andhra Pradesh",
+    "destination": "Tripura",
+    "tripType": "Business",
+    "latitude": 23.745127,
+    "longitude": 91.746826,
+    "description": "",
+    "imageURL": "https://www.planetware.com/photos-large/I/italy-rome-vatican-city.jpg"
+  },
+  {
+    "travelFromDate": 1631908500000,
+    "travelToDate": 1626811369000,
+    "source": "Uttar Pradesh",
+    "destination": "Uttarakhand",
+    "tripType": "School",
+    "latitude": 30.087160,
+    "longitude": 78.268112,
+    "description": "",
+    "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2018/04/Royal-Castle-poland-krakow-400x243.jpg"
+  },
+  {
+    "travelFromDate": 1625549426000,
+    "travelToDate": 1623165305000,
+    "source": "Punjab",
+    "destination": "Rajasthan",
+    "tripType": "School",
+    "latitude": 27.391277,
+    "longitude": 73.432617,
+    "description": "",
+    "imageURL": "https://www.planetware.com/photos-large/USNY/usa-best-places-san-francisco.jpg"
+  },
+  {
+    "travelFromDate": 1624200950000,
+    "travelToDate": 1617316589000,
+    "source": "Nagaland",
+    "destination": "Mizoram",
+    "tripType": "Holiday",
+    "latitude": 23.727106,
+    "longitude": 92.717636,
+    "description": "",
+    "imageURL": "https://www.touropia.com/gfx/d/best-places-to-visit-in-ukraine/uman.jpg"
+  },
+  {
+    "travelFromDate": 1627886887000,
+    "travelToDate": 1637252009000,
+    "source": "Maharashtra",
+    "destination": "Ladakh",
+    "tripType": "Holiday",
+    "latitude": 34.152588,
+    "longitude": 77.577049,
+    "description": "",
+    "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2019/03/PTV-Albania-cover.jpg"
+  },
+  {
+    "travelFromDate": 1632708566000,
+    "travelToDate": 1614283125000,
+    "source": "Madhya Pradesh",
+    "destination": "Puducherry",
+    "tripType": "School",
+    "latitude": 11.9416,
+    "longitude": 79.8083,
+    "description": "",
+    "imageURL": "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/08/Overwater-villa-in-Gili-Islands.jpg"
+  },
+  {
+    "travelFromDate": 1615309493000,
+    "travelToDate": 1636587080000,
+    "source": "Kerala",
+    "destination": "Lakshadweep",
+    "tripType": "Business",
+    "latitude": 10.5667,
+    "longitude": 72.6417,
+    "description": "",
+    "imageURL": "https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_230,q_auto,w_305/v1/filestore/7yaj6rird8dvc5cgowawkltd3cj8_1580306295_shutterstock_125112029.jpg"
+  }
+]

@@ -9,9 +9,9 @@ import Map, {
 } from 'react-map-gl';
 import React, { useMemo, useState } from 'react';
 
-import CITIES from '../constants/cities.json';
 import Pin from './Pin';
 import { PopupInterface } from '../interfaces';
+import TRIPS from '../constants/trips.json';
 import config from '../constants/config.json';
 import mapboxgl from 'mapbox-gl';
 
@@ -26,17 +26,17 @@ const GMap = () => {
 
   const pins = useMemo(
     () =>
-      CITIES.map((city, index) => (
+      TRIPS.map((trip, index) => (
         <Marker
           key={`marker-${index}`}
-          longitude={city.longitude}
-          latitude={city.latitude}
+          longitude={trip.longitude}
+          latitude={trip.latitude}
           anchor="bottom"
           onClick={e => {
             // If we let the click event propagates to the map, it will immediately close the popup
             // with `closeOnClick: true`
             e.originalEvent.stopPropagation();
-            setPopupInfo(city);
+            setPopupInfo(trip);
           }}
         >
           <Pin />
@@ -49,10 +49,10 @@ const GMap = () => {
     <div>
       <Map
         initialViewState={{
-          latitude: 40,
-          longitude: -100,
+          latitude: 21.7679,
+          longitude: 78.8718,
           zoom: 3.5,
-          bearing: 0, 
+          bearing: 0,
           pitch: 0
         }}
         mapStyle={config.styles.basic}
@@ -72,15 +72,15 @@ const GMap = () => {
             onClose={() => setPopupInfo(null)}
           >
             <div>
-              {popupInfo.city}, {popupInfo.state} |{' '}
-              <a
-                target="_new"
-                href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${popupInfo.city}, ${popupInfo.state}`}
-              >
-                Wikipedia
-              </a>
+              Destination:{popupInfo.destination}
             </div>
-            <img width="100%" src={popupInfo.image} />
+            <div>
+              Source: {popupInfo.source}
+            </div>
+            <div>
+              Trip Type: {popupInfo.tripType}
+            </div>
+            <img width="100%" src={popupInfo.imageURL} />
           </Popup>
         )}
       </Map>

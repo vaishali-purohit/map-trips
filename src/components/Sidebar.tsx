@@ -1,4 +1,4 @@
-import { Box, Drawer, IconButton, Typography, styled } from '@mui/material';
+import { Box, Button, Drawer, IconButton, Typography, styled } from '@mui/material';
 
 import { Close } from '@mui/icons-material';
 
@@ -28,8 +28,24 @@ const Sidebar = ({ isOpen, setIsOpen }: Props) => {
           <Close fontSize="large" />
         </IconButton>
       </DrawerHeader>
-      <Box sx={{ width: 240, p: 3 }}>
-        <Typography>Display Drawer Values</Typography>
+      <Box sx={{ width: 300, p: 3 }}>
+        <Typography variant='h5'>Display Drawer Values</Typography>
+        <Box>
+          <Typography>Filter By</Typography>
+          <Typography>Selected Types</Typography>
+        </Box>
+        <Box>
+          <Typography>Sort By</Typography>
+          <Typography>Time</Typography>
+          <Typography>Alphabetically</Typography>
+        </Box>
+        <Box>
+          <Typography>Show List of Items</Typography>
+        </Box>
+        <Box>
+          <Button>Next</Button>
+          <Button>Previous</Button>
+        </Box>
       </Box>
     </Drawer>
   );
