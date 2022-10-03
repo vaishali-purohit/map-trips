@@ -9,3 +9,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.mapboxgl-map {
+  width: 100vw !important;
+  height: 100vh !important;
+}
