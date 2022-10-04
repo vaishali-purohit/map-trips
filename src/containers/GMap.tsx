@@ -7,13 +7,14 @@ import Map, {
   NavigationControl,
   Popup,
 } from 'react-map-gl';
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 import Pin from './Pin';
 import { PopupInterface } from '../interfaces';
 import TRIPS from '../constants/trips.json';
 import config from '../constants/config.json';
 import mapboxgl from 'mapbox-gl';
+import { useSelector } from 'react-redux';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -21,8 +22,24 @@ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN || '';
 
+interface SelectorProps {
+  detail: PopupInterface
+};
+
 const GMap = () => {
   const [popupInfo, setPopupInfo] = useState<PopupInterface | null>(null);
+  const details = useSelector((state: SelectorProps) => state.detail);
+  const [pinSize, setPinSize] = useState<number>(20);
+
+  useEffect(() => {
+    if (details.latitude && details.longitude) {
+      setPopupInfo(details);
+      setPinSize(24);
+    } else {
+      setPinSize(20);
+      setPopupInfo(null);
+    }
+  }, [details])
 
   const pins = useMemo(
     () =>
@@ -37,9 +54,10 @@ const GMap = () => {
             // with `closeOnClick: true`
             e.originalEvent.stopPropagation();
             setPopupInfo(trip);
+            setPinSize(24);
           }}
         >
-          <Pin />
+          <Pin size={pinSize} />
         </Marker>
       )),
     []
@@ -69,7 +87,10 @@ const GMap = () => {
             anchor="top"
             longitude={Number(popupInfo.longitude)}
             latitude={Number(popupInfo.latitude)}
-            onClose={() => setPopupInfo(null)}
+            onClose={() => {
+              setPopupInfo(null);
+              setPinSize(20);
+            }}
           >
             <div>
               Destination:{popupInfo.destination}

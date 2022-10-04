@@ -1,8 +1,8 @@
 import { Box, Drawer, IconButton, Typography, styled } from '@mui/material';
 
 import { Close } from '@mui/icons-material';
+import { DrawerStateProps } from '../interfaces/drawer';
 import { SidebarProps } from '../interfaces/component';
-import { StateProps } from '../interfaces/drawer';
 import TableData from './Table';
 import { tripHeading } from '../constants/index';
 import { useSelector } from 'react-redux';
@@ -27,7 +27,7 @@ const NoDataDiv = styled('div')(() => ({
 }));
 
 interface SelectorProps {
-  drawer: StateProps
+  drawer: DrawerStateProps
 };
 
 const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
@@ -44,7 +44,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           <Close fontSize="large" />
         </IconButton>
       </DrawerHeader>
-      <Box sx={{ width: 400, p: 3 }}>
+      <Box sx={{ width: 400, p: 1 }}>
         <Typography fontSize={18} fontWeight={600} marginBottom={2}>Vistied Trips List</Typography>
         <Box>
           {!tripList.length ? (

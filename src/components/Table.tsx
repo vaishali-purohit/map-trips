@@ -11,8 +11,11 @@ import {
 } from '@mui/material';
 import React, { JSXElementConstructor, Key, ReactElement, ReactFragment, ReactPortal } from 'react';
 
+import { GET_DETAILS } from '../utils/types';
+import { PopupInterface } from '../interfaces';
 import { TableProps } from '../interfaces/component';
 import { styled } from '@mui/material/styles';
+import { useDispatch } from 'react-redux';
 
 const TableHeadingCell = styled(Cell)(() => ({
   letterSpacing: '0.15px',
@@ -57,6 +60,11 @@ const TableContainer = styled(Container)(() => ({
 
 const TableData = (props: TableProps) => {
   const { headings, type, rowData } = props;
+  const dispatch = useDispatch();
+
+  const handleTripClick = (data: PopupInterface) => {
+    dispatch({ type: GET_DETAILS, payload: data })
+  }
 
   const compileHeader = (headings: any[], value: Key | null | undefined) => {
     return (
@@ -83,7 +91,11 @@ const TableData = (props: TableProps) => {
   const renderData = (data: { [x: string]: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined | any; }, heading: { key: string; type: string; }) => {
     if (heading.key === 'destination') {
       return (
-        <TableCell key={`${heading.key}_${data[heading.key] || 0}`} style={{ display: 'flex' }}>
+        <TableCell
+          key={`${heading.key}_${data[heading.key] || 0}`}
+          sx={{ display: 'flex', '&:hover': { cursor: 'pointer', backgroundColor: '#D4F1F4' } }}
+          onClick={() => handleTripClick(data)}
+        >
           <Box style={{ flex: '1 1 auto' }}>
             <Typography fontSize={18} fontWeight={600}>{data[heading.key]}</Typography>
             <Typography fontSize={16}>Type: {data['tripType']}</Typography>

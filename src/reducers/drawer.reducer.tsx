@@ -1,8 +1,8 @@
+import { DrawerStateProps } from '../interfaces/drawer';
 import { GET_TRIP_LIST } from '../utils/types';
-import { StateProps } from '../interfaces/drawer';
 import TRIPS from '../constants/trips.json';
 
-const initialState: StateProps = {
+const initialState: DrawerStateProps = {
   tripList: TRIPS,
   type: 'all',
 };
@@ -19,7 +19,7 @@ type Action =
   }
 
 
-export default function drawer(state = initialState, action: Action): StateProps {
+export default function drawer(state = initialState, action: Action): DrawerStateProps {
   const { type, payload } = action;
 
   switch (type) {

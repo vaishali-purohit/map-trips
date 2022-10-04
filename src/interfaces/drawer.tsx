@@ -1,6 +1,6 @@
 import { PopupInterface } from './index';
 
-export interface StateProps {
+export interface DrawerStateProps {
   tripList: PopupInterface[],
   type: string,
 };
