@@ -60,9 +60,8 @@ const GMap = () => {
         <NavigationControl position="bottom-right" showCompass={false} />
 
         <MarkerControl setPopupInfo={setPopupInfo} />
-
-        {popupInfo && <PopupComponent popupInfo={popupInfo} setPopupInfo={setPopupInfo} />}
       </Map>
+      {popupInfo && <PopupComponent popupInfo={popupInfo} setPopupInfo={setPopupInfo} />}
     </div>
   );
 };
