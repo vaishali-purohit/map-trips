@@ -5,6 +5,7 @@ import { DrawerStateProps } from '../interfaces/drawer';
 import { SidebarProps } from '../interfaces/component';
 import { TRIP_HEADING } from '../constants/index';
 import TableData from './Table';
+import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
@@ -31,7 +32,10 @@ interface SelectorProps {
 };
 
 const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
-  const tripList = useSelector((state: SelectorProps) => state.drawer.tripList);
+  const { tripList, sort } = useSelector((state: SelectorProps) => state.drawer);
+
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  useEffect(() => {}, [sort])
 
   return (
     <Drawer variant="persistent" hideBackdrop={true} open={isOpen} sx={{
