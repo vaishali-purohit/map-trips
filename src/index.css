@@ -28,7 +28,7 @@ code {
 }
 
 .scrollbar {
-  max-height: 808px;
+  max-height: 760px;
   overflow-y: scroll;
   padding-right: 5px;
 }

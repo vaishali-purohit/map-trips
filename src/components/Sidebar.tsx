@@ -1,4 +1,4 @@
-import { Box, Drawer, IconButton, styled } from '@mui/material';
+import { Box, Drawer, IconButton, Typography, styled } from '@mui/material';
 
 import { Close } from '@mui/icons-material';
 import { SidebarProps } from '../interfaces/component';
@@ -45,6 +45,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
         </IconButton>
       </DrawerHeader>
       <Box sx={{ width: 400, p: 3 }}>
+        <Typography fontSize={18} fontWeight={600} marginBottom={2}>Vistied Trips List</Typography>
         <Box>
           {!tripList.length ? (
             <NoDataDiv>
