@@ -1,4 +1,4 @@
-import { Box, Drawer, IconButton, Typography, styled } from '@mui/material';
+import { Box, Drawer, IconButton, Typography, styled, useMediaQuery } from '@mui/material';
 
 import { Close } from '@mui/icons-material';
 import { DrawerStateProps } from '../interfaces/drawer';
@@ -34,6 +34,8 @@ interface SelectorProps {
 const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   const { tripList, sort } = useSelector((state: SelectorProps) => state.drawer);
 
+  const below500 = useMediaQuery('(max-width: 500px)');
+
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   useEffect(() => {}, [sort])
 
@@ -48,7 +50,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           <Close fontSize="large" />
         </IconButton>
       </DrawerHeader>
-      <Box sx={{ width: 400, p: 1 }}>
+      <Box sx={{ width: below500 ? 360 : 400, p: 1 }}>
         <Typography fontSize={18} fontWeight={600} marginBottom={2}>Vistied Trips List</Typography>
         <Box>
           {!tripList.length ? (
