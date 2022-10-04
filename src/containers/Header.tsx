@@ -36,6 +36,10 @@ export default function Header() {
           >
             Trips Details
           </Typography>
+          <Box style={{ display: 'flex' }}>
+            <Typography marginRight={4}>Filter By</Typography>
+            <Typography>Sort By</Typography>
+          </Box>
         </Toolbar>
       </AppBar>
       <Sidebar {...{ isOpen, setIsOpen }} />

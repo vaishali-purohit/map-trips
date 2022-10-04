@@ -1,6 +1,10 @@
-import { Box, Button, Drawer, IconButton, Typography, styled } from '@mui/material';
+import { Box, Drawer, IconButton, styled } from '@mui/material';
 
 import { Close } from '@mui/icons-material';
+import { SidebarProps } from '../interfaces/component';
+import TRIPS from '../constants/trips.json';
+import TableData from './Table';
+import { tripHeading } from '../constants/index';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
   display: 'flex',
@@ -11,12 +15,17 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   ...theme.mixins.toolbar,
 }));
 
-interface Props {
-  isOpen: boolean,
-  setIsOpen: (value: boolean) => void,
-}
+const NoDataDiv = styled('div')(() => ({
+  display: 'flex',
+  flexDirection: 'column',
+  margin: 'auto auto',
 
-const Sidebar = ({ isOpen, setIsOpen }: Props) => {
+  '& p': {
+    textAlign: 'center',
+  },
+}));
+
+const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   return (
     <Drawer variant="persistent" hideBackdrop={true} open={isOpen} sx={{
       '& .MuiDrawer-paper': {
@@ -28,23 +37,15 @@ const Sidebar = ({ isOpen, setIsOpen }: Props) => {
           <Close fontSize="large" />
         </IconButton>
       </DrawerHeader>
-      <Box sx={{ width: 300, p: 3 }}>
-        <Typography variant='h5'>Display Drawer Values</Typography>
+      <Box sx={{ width: 400, p: 3 }}>
         <Box>
-          <Typography>Filter By</Typography>
-          <Typography>Selected Types</Typography>
-        </Box>
-        <Box>
-          <Typography>Sort By</Typography>
-          <Typography>Time</Typography>
-          <Typography>Alphabetically</Typography>
-        </Box>
-        <Box>
-          <Typography>Show List of Items</Typography>
-        </Box>
-        <Box>
-          <Button>Next</Button>
-          <Button>Previous</Button>
+          {!TRIPS.length ? (
+            <NoDataDiv>
+              <p>No trips yet</p>
+            </NoDataDiv>
+          ) : (
+            <TableData headings={tripHeading} type="trips" rowData={TRIPS || []} emptyText="No offers yet" />
+          )}
         </Box>
       </Box>
     </Drawer>

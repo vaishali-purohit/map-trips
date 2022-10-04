@@ -14,3 +14,21 @@ code {
   width: 100vw !important;
   height: 100vh !important;
 }
+
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+}
+
+.scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+.scrollbar {
+  max-height: 808px;
+  overflow-y: scroll;
+  padding-right: 5px;
+}
