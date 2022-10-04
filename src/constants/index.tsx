@@ -2,7 +2,7 @@ export const DEFAULT_SIZE = 20;
 
 export const PAGE_SIZES = [100, 50, 20];
 
-export const tripHeading = [
+export const TRIP_HEADING = [
   {
     key: 'destination',
     label: 'Destination',
@@ -10,4 +10,4 @@ export const tripHeading = [
   },
 ];
 
-export const tripTypes = [ 'School', 'Business', 'Holiday' ]
+export const TRIP_TYPES = [ 'School', 'Business', 'Holiday' ]

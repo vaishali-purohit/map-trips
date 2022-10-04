@@ -3,8 +3,8 @@ import { Box, Drawer, IconButton, Typography, styled } from '@mui/material';
 import { Close } from '@mui/icons-material';
 import { DrawerStateProps } from '../interfaces/drawer';
 import { SidebarProps } from '../interfaces/component';
+import { TRIP_HEADING } from '../constants/index';
 import TableData from './Table';
-import { tripHeading } from '../constants/index';
 import { useSelector } from 'react-redux';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
@@ -52,7 +52,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
               <p>No trips yet</p>
             </NoDataDiv>
           ) : (
-            <TableData headings={tripHeading} type="trips" rowData={tripList || []} emptyText="No offers yet" />
+            <TableData headings={TRIP_HEADING} type="trips" rowData={tripList || []} emptyText="No offers yet" />
           )}
         </Box>
       </Box>

@@ -1,7 +1,7 @@
 import { GET_DETAILS } from '../utils/types';
 import { PopupInterface } from '../interfaces';
 
-export const initialState: PopupInterface = {
+export const initialState = {
   travelFromDate: undefined,
   travelToDate: undefined,
   source: undefined,
