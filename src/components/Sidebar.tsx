@@ -2,9 +2,10 @@ import { Box, Drawer, IconButton, styled } from '@mui/material';
 
 import { Close } from '@mui/icons-material';
 import { SidebarProps } from '../interfaces/component';
-import TRIPS from '../constants/trips.json';
+import { StateProps } from '../interfaces/drawer';
 import TableData from './Table';
 import { tripHeading } from '../constants/index';
+import { useSelector } from 'react-redux';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
   display: 'flex',
@@ -25,7 +26,13 @@ const NoDataDiv = styled('div')(() => ({
   },
 }));
 
+interface SelectorProps {
+  drawer: StateProps
+};
+
 const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
+  const tripList = useSelector((state: SelectorProps) => state.drawer.tripList);
+
   return (
     <Drawer variant="persistent" hideBackdrop={true} open={isOpen} sx={{
       '& .MuiDrawer-paper': {
@@ -39,12 +46,12 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
       </DrawerHeader>
       <Box sx={{ width: 400, p: 3 }}>
         <Box>
-          {!TRIPS.length ? (
+          {!tripList.length ? (
             <NoDataDiv>
               <p>No trips yet</p>
             </NoDataDiv>
           ) : (
-            <TableData headings={tripHeading} type="trips" rowData={TRIPS || []} emptyText="No offers yet" />
+            <TableData headings={tripHeading} type="trips" rowData={tripList || []} emptyText="No offers yet" />
           )}
         </Box>
       </Box>

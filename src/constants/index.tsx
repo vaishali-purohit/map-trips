@@ -9,3 +9,5 @@ export const tripHeading = [
     type: 'trips',
   },
 ];
+
+export const tripTypes = [ 'School', 'Business', 'Holiday' ]

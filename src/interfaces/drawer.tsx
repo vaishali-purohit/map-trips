@@ -1,10 +1,6 @@
-export interface StateProps {
-  open: boolean,
-  position: string,
-  noOverlay: boolean,
-};
+import { PopupInterface } from './index';
 
-export interface ActionProps {
+export interface StateProps {
+  tripList: PopupInterface[],
   type: string,
-  payload: StateProps,
 };

@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-const configureStore = (initialState: { drawer?: { open: boolean; position: string; noOverlay: boolean; } | undefined } | undefined) => {
+const configureStore = (initialState: { drawer?: { tripList: { travelFromDate: number; travelToDate: number; source: string; destination: string; tripType: string; latitude: number; longitude: number; description: string; imageURL: string; }[]; type: string; } | undefined; } | undefined) => {
   const middleware = []
   const enhancers = []
 
