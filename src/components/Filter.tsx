@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Checkbox from '@mui/material/Checkbox';
+import FilterListIcon from '@mui/icons-material/FilterList';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormGroup from '@mui/material/FormGroup';
 import { GET_TRIP_LIST } from '../utils/types';
@@ -57,8 +58,8 @@ export default function FilterComponent() {
 
   return (
     <Box>
-      <Typography marginRight={4} sx={{ '&:hover': { cursor: 'pointer' } }}
-        onClick={handleOpenFilterMenu}>Filter By</Typography>
+      <Typography marginRight={4} sx={{ display: 'flex', gap: 1, '&:hover': { cursor: 'pointer' } }}
+        onClick={handleOpenFilterMenu}><FilterListIcon /> Filter</Typography>
       <Menu
         sx={{ mt: '45px' }}
         id="menu-appbar"

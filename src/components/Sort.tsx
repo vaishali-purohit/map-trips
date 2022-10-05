@@ -8,6 +8,7 @@ import Menu from '@mui/material/Menu';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import { SORT_TRIP_LIST } from '../utils/types';
+import SortIcon from '@mui/icons-material/Sort';
 import Typography from '@mui/material/Typography';
 import { useDispatch } from 'react-redux';
 
@@ -42,8 +43,8 @@ export default function SortComponent() {
 
   return (
     <Box>
-      <Typography sx={{ '&:hover': { cursor: 'pointer' } }}
-        onClick={handleOpenSortMenu}>Sort By</Typography>
+      <Typography sx={{ display: 'flex', gap: 1, '&:hover': { cursor: 'pointer' } }}
+        onClick={handleOpenSortMenu}><SortIcon /> Sort</Typography>
       <Menu
         sx={{ mt: '45px' }}
         id="menu-appbar"
