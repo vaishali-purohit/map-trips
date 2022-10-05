@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["webpack-env"]
+    "types": ["webpack-env", "jest", "mocha"]
   },
   "include": ["src", "src/custom.d.ts"],
   "exclude": ["node_modules", "build", "storybook-static"]

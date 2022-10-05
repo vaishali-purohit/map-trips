@@ -11,12 +11,7 @@ import MarkerControl from '../components/Marker';
 import PopupComponent from '../components/Popup';
 import { PopupInterface } from '../interfaces';
 import config from '../constants/config.json';
-import mapboxgl from 'mapbox-gl';
 import { useSelector } from 'react-redux';
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN || '';
 
