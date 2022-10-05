@@ -1,5 +1,6 @@
-import { getWebpackConfig } from 'ocular-dev-tools';
-import webpack from 'webpack';
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { getWebpackConfig } = require('ocular-dev-tools');
+const webpack = require('webpack');
 
 // eslint-disable-next-line no-undef
 module.exports = (env) => {
