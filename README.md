@@ -1,5 +1,9 @@
 # Map Trips
 
+## Preview
+[map-trips.webm](https://user-images.githubusercontent.com/37063887/194312929-492cc58b-134a-4408-ba89-83742636c73d.webm)
+
+
 ## Requirements
 - node v16+
 - yarn v1.22+
