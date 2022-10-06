@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 import Map, {
