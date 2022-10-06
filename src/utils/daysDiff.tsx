@@ -1,5 +1,5 @@
 export const getDaysDifference = (startDate: Date, endDate: Date) => {
-  const differenceInTime = startDate.getTime() - endDate.getTime();
+  const differenceInTime = endDate.getTime() - startDate.getTime();
 
   if (differenceInTime <= 0) {
     return 0;

@@ -1,0 +1,7 @@
+# Ignore uncessary files on the build
+/.git/
+/.cache/
+node_modules
+
+# Ignore env files on the build
+.env.*

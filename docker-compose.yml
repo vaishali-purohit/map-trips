@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+
+  map-trips:
+    container_name: map-trips
+    build:
+      context: .
+      target: development
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+    environment:
+      - CHOKIDAR_USEPOLLING=true

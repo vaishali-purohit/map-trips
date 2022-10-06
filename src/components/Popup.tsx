@@ -96,7 +96,7 @@ const PopupComponent: React.FC<SelectorProps> = ({ popupInfo, setPopupInfo }) =>
           Travel Date From: {Moment(popupInfo?.travelFromDate).format('MMM.DD, YYYY')}
         </Typography>
         <Typography>
-          Travel Date From: {Moment(popupInfo?.travelToDate).format('MMM.DD, YYYY')}
+          Travel Date To: {Moment(popupInfo?.travelToDate).format('MMM.DD, YYYY')}
         </Typography>
       </Box>
       <Box>

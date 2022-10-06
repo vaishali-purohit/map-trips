@@ -22,8 +22,8 @@
     "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2016/01/Sicily_italy_1_700x400-400x229.jpg"
   },
   {
-    "travelFromDate": 1631883229000,
-    "travelToDate": 1626519890000,
+    "travelFromDate": 1626519890000,
+    "travelToDate": 1631883229000,
     "source": "Delhi",
     "destination": "Jammu and Kashmir",
     "tripType": "Holiday",
@@ -44,8 +44,8 @@
     "imageURL": "https://www.planetware.com/photos-large/CHN/china-great-wall-and-mountain.jpg"
   },
   {
-    "travelFromDate": 1641109626000,
-    "travelToDate": 1612378761000,
+    "travelFromDate": 1612378761000,
+    "travelToDate": 1641109626000,
     "source": "Puducherry",
     "destination": "West Bengal",
     "tripType": "School",
@@ -88,8 +88,8 @@
     "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2018/05/Places-To-Visit-In-Sweden_20th-jun.jpg"
   },
   {
-    "travelFromDate": 1638028965000,
-    "travelToDate": 1629047480000,
+    "travelFromDate": 1629047480000,
+    "travelToDate": 1638028965000,
     "source": "Andhra Pradesh",
     "destination": "Tripura",
     "tripType": "Business",
@@ -99,8 +99,8 @@
     "imageURL": "https://www.planetware.com/photos-large/I/italy-rome-vatican-city.jpg"
   },
   {
-    "travelFromDate": 1631908500000,
-    "travelToDate": 1626811369000,
+    "travelFromDate": 1626811369000,
+    "travelToDate": 1631908500000,
     "source": "Uttar Pradesh",
     "destination": "Uttarakhand",
     "tripType": "School",
@@ -110,8 +110,8 @@
     "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2018/04/Royal-Castle-poland-krakow-400x243.jpg"
   },
   {
-    "travelFromDate": 1625549426000,
-    "travelToDate": 1623165305000,
+    "travelFromDate": 1623165305000,
+    "travelToDate": 1625549426000,
     "source": "Punjab",
     "destination": "Rajasthan",
     "tripType": "School",
@@ -121,8 +121,8 @@
     "imageURL": "https://www.planetware.com/photos-large/USNY/usa-best-places-san-francisco.jpg"
   },
   {
-    "travelFromDate": 1624200950000,
-    "travelToDate": 1617316589000,
+    "travelFromDate": 1617316589000,
+    "travelToDate": 1624200950000,
     "source": "Nagaland",
     "destination": "Mizoram",
     "tripType": "Holiday",
@@ -143,8 +143,8 @@
     "imageURL": "https://img.traveltriangle.com/blog/wp-content/uploads/2019/03/PTV-Albania-cover.jpg"
   },
   {
-    "travelFromDate": 1632708566000,
-    "travelToDate": 1614283125000,
+    "travelFromDate": 1614283125000,
+    "travelToDate": 1632708566000,
     "source": "Madhya Pradesh",
     "destination": "Puducherry",
     "tripType": "School",
