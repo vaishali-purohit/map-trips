@@ -44,7 +44,7 @@ module.exports = (env) => {
 
   config.plugins = (config.plugins || []).concat([
     new webpack.DefinePlugin({
-      __MAPBOX_TOKEN__: JSON.stringify(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN), // eslint-disable-line
+      __MAPBOX_TOKEN__: JSON.stringify(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN),
     }),
   ]);
 

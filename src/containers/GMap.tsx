@@ -44,10 +44,11 @@ const GMap = () => {
     <div>
       <Map
         {...viewport}
+        reuseMaps
         mapStyle={config.styles.basic}
         mapboxAccessToken={MAPBOX_TOKEN}
         attributionControl={false}
-        onDrag={e => setViewport({...viewport, latitude: e.viewState.latitude, longitude: e.viewState.longitude})}
+        onDrag={e => setViewport({ ...viewport, latitude: e.viewState.latitude, longitude: e.viewState.longitude })}
       >
         <FullscreenControl position="bottom-right" />
         <NavigationControl position="bottom-right" showCompass={false} />
